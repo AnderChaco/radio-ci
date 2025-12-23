@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "radio-ci",
+    "name": "Radio Christian International",
     "slug": "radio-ci",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,17 +10,32 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#9B5DE5"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "backgroundColor": "#9B5DE5",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#9B5DE5"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "INTERNET",
+        "FOREGROUND_SERVICE",
+        "WAKE_LOCK",
+        "INTERNET",
+        "FOREGROUND_SERVICE",
+        "WAKE_LOCK"
+      ],
+      "package": "com.anderchaco.radioci"
     },
     "web": {
       "favicon": "./assets/favicon.png"
